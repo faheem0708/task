@@ -29,6 +29,9 @@ export function LoginForm({
   const router = useRouter();
 
   const toggleVairent = () => {
+    setName('');
+    setEmail('');
+    setPassword('');
     setVariant((currentValue) => currentValue === 'login' ? 'register' : 'login');
   }
 
